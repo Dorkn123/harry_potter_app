@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <header>
+        <h1>Welcome to the Magical World of Harry Potter</h1>
+        <p>Dive deep into the enchanting tales of bravery, friendship, and magic!</p>
+    </header>
+
+    <section class="carousel">
+        <!-- Simple carousel of book covers. You can use JavaScript or a library like Slick to make this dynamic. -->
+        <img src="{{ url_for('static', filename='images/book1_cover.jpg') }}" alt="Harry Potter and the Philosopher's Stone cover">
+        <img src="{{ url_for('static', filename='images/book2_cover.jpg') }}" alt="Harry Potter and the Chamber of Secrets cover">
+        <img src="{{ url_for('static', filename='images/book3_cover.jpg') }}" alt="Harry Potter and the Prisoner of Azkaban cover">
+        <img src="{{ url_for('static', filename='images/book4_cover.jpg') }}" alt="Harry Potter and the Goblet of Fire cover">
+        <img src="{{ url_for('static', filename='images/book5_cover.jpg') }}" alt="Harry Potter and the Order of the Phoenix cover">
+        <img src="{{ url_for('static', filename='images/book6_cover.jpg') }}" alt="Harry Potter and the Half-Blood Prince cover">
+        <img src="{{ url_for('static', filename='images/book7_cover.jpg') }}" alt="Harry Potter and the Deathly Hallows cover">
+    </section>
+    
+
+    <section class="introduction">
+        <h2>About the Harry Potter Series</h2>
+        <p>The Harry Potter series, authored by J.K. Rowling, tells the story of a young wizard named Harry Potter and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry. The main story arc concerns Harry's struggle against the dark wizard Lord Voldemort, who aims to become immortal, overthrow the wizarding world, and subjugate all non-magical people.</p>
+    </section>
+
+    <section class="featured-video">
+        <h2>Featured Video</h2>
+        <!-- Embed a YouTube video. Perhaps a popular trailer or a fan-made compilation. -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section class="news-updates">
+        <h2>Latest in the Wizarding World</h2>
+        <article>
+            <h3>New Harry Potter Spinoff Announced!</h3>
+            <p>Details about the upcoming series set in the Harry Potter universe have just been unveiled. Set to premiere next fall, fans are buzzing with excitement...</p>
+        </article>
+        <article>
+            <h3>J.K. Rowling Releases New Short Story</h3>
+            <p>In a surprise move, J.K. Rowling released a new short story set in the Wizarding World, giving fans a deeper look into the life of Sirius Black...</p>
+        </article>
+        <!-- You can add more articles or integrate a dynamic news system later -->
+    </section>
+
+    <section class="call-to-action">
+        <p>Want to join the magical journey? Dive into each book and discover the wonders and perils faced by Harry and his friends.</p>
+        <a href="{{ url_for('book1') }}" class="btn">Begin the Adventure</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 The Magical World of Harry Potter | Designed by [Your Name]</p>
+    </footer>
+{% endblock %}

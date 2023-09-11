@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<section id="book1" class="book-detail">
+    <header>
+        <h1>Harry Potter and the Philosopher's Stone</h1>
+    </header>
+    
+    <section class="book-description">
+        <img src="{{ url_for('static', filename='images/book1_cover.jpg') }}" alt="Harry Potter and the Philosopher's Stone cover">
+        
+        <p>
+        Here will be a short description of the book taken from Wikipedia or another reliable source.
+        </p>
+    </section>
+
+    <section class="book-trailer">
+        <h2>Movie Trailer</h2>
+        <!-- You can embed a YouTube video for the book's movie trailer -->
+        <iframe width="560" height="315" src="YOUTUBE_URL_FOR_TRAILER" frameborder="0" allowfullscreen></iframe>
+    </section>
+    
+    <section class="book-analysis">
+        <h2>Deep Analysis</h2>
+        <!-- You can embed a YouTube video for a deep analysis of the book -->
+        <iframe width="560" height="315" src="YOUTUBE_URL_FOR_ANALYSIS" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section class="comments">
+        <!-- A placeholder for the comments system. Could be integrated with Disqus or a custom comments system -->
+        <h2>Comments</h2>
+        <p>Place for visitors to leave comments.</p>
+    </section>
+</section>
+{% endblock %}

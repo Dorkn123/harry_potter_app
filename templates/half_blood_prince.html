@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<section id="book6" class="book-detail">
+    <header>
+        <h1>Harry Potter and the Half-Blood Prince</h1>
+    </header>
+    
+    <section class="book-description">
+        <img src="{{ url_for('static', filename='images/book6_cover.jpg') }}" alt="Harry Potter and the Half-Blood Prince cover">
+        
+        <p>
+        Short description of "Harry Potter and the Half-Blood Prince" from Wikipedia or another reliable source.
+        </p>
+    </section>
+
+    <section class="book-trailer">
+        <h2>Movie Trailer</h2>
+        <!-- Embed a YouTube video for the book's movie trailer -->
+        <iframe width="560" height="315" src="YOUTUBE_URL_FOR_BOOK6_TRAILER" frameborder="0" allowfullscreen></iframe>
+    </section>
+    
+    <section class="book-analysis">
+        <h2>Deep Analysis</h2>
+        <!-- Embed a YouTube video for a deep analysis of the book -->
+        <iframe width="560" height="315" src="YOUTUBE_URL_FOR_BOOK6_ANALYSIS" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section class="comments">
+        <!-- Placeholder for the comments system -->
+        <h2>Comments</h2>
+        <p>Place for visitors to leave comments.</p>
+    </section>
+</section>
+{% endblock %}
