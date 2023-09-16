@@ -1,0 +1,59 @@
+/* static/css/sidebar.css */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #333; /* Adjust the background color as needed */
+    color: #fff; /* Adjust the text color as needed */
+    padding: 20px;
+    z-index: 1000; /* Ensure the sidebar is above other content */
+    overflow-y: auto; /* Add a vertical scrollbar if the content exceeds the height */
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+.center-content {
+    margin: 0 auto; /* This centers the content horizontally */
+    text-align: center; /* This centers the text inside the section */
+}
+
+/* Define the background image for the book1-background class */
+.book1-background {
+    background-image: url('https://e0.pxfuel.com/wallpapers/259/192/desktop-wallpaper-harry-potter-and-the-sorcerer-s-stone-harry-potter-and-the-philosopher-s-stone.jpg');
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image horizontally and vertically */
+}
+
+/* Custom font for your website */
+@font-face {
+    font-family: 'MagicSchoolTwo';
+    src: url('../../fonts/MagicSchoolTwo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Adjust the content area to accommodate the sidebar */
+main {
+    margin-left: 280px; /* Ensure the content area doesn't overlap with the sidebar */
+    padding: 20px; /* Add some spacing around the content */
+}

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 
     <!-- Styles for individual book pages -->
+    {% if is_home_page %}
     <link rel="stylesheet" href="{{ url_for('static', filename='css/book1.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/book2.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/book3.css') }}">
@@ -16,11 +17,12 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/book5.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/book6.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/book7.css') }}">
+    {% endif %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/sidebar.css') }}">
 </head>
 
 <body>
-    <header>
-        <h1>Welcome to the Harry Potter Universe</h1>
+    <aside class="sidebar">
         <nav>
             <ul>
                 <li><a href="{{ url_for('index') }}">Home</a></li>
@@ -33,7 +35,7 @@
                 <li><a href="{{ url_for('book7') }}">The Deathly Hallows</a></li>
             </ul>
         </nav>
-    </header>
+    </aside>
 
     <main>
         <!-- This block will be overridden by content from other templates -->
@@ -46,6 +48,7 @@
     </footer>
 
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    {% if is_home_page %}
     <script src="{{ url_for('static', filename='js/book1.js') }}"></script>
     <script src="{{ url_for('static', filename='js/book2.js') }}"></script>
     <script src="{{ url_for('static', filename='js/book3.js') }}"></script>
@@ -53,6 +56,7 @@
     <script src="{{ url_for('static', filename='js/book5.js') }}"></script>
     <script src="{{ url_for('static', filename='js/book6.js') }}"></script>
     <script src="{{ url_for('static', filename='js/book7.js') }}"></script>
+    {% endif %}
 </body>
 
 </html>

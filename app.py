@@ -8,7 +8,7 @@ def index():
 
 @app.route('/book1')
 def book1():
-    return render_template('book1.html')
+    return render_template('philosophers_stone.html')
 
 @app.route('/book2')
 def book2():

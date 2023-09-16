@@ -1,14 +1,13 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<section id="book1" class="book-detail">
+<section id="book1" class="book-detail center-content book1-background">
     <header>
         <h1>Harry Potter and the Philosopher's Stone</h1>
     </header>
     
     <section class="book-description">
-        <img src="{{ url_for('static', filename='images/book1_cover.jpg') }}" alt="Harry Potter and the Philosopher's Stone cover">
-        
+        <img src="https://wizkids.co.il/cdn/shop/products/76813c8d0218cab5137b190541dce431_x700.gif?v=1514210268" alt="Harry Potter and the Philosopher's Stone cover">        
         <p>
         Here will be a short description of the book taken from Wikipedia or another reliable source.
         </p>
@@ -17,13 +16,13 @@
     <section class="book-trailer">
         <h2>Movie Trailer</h2>
         <!-- You can embed a YouTube video for the book's movie trailer -->
-        <iframe width="560" height="315" src="YOUTUBE_URL_FOR_TRAILER" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/mNgwNXKBEW0" frameborder="0" allowfullscreen></iframe>
     </section>
     
     <section class="book-analysis">
         <h2>Deep Analysis</h2>
         <!-- You can embed a YouTube video for a deep analysis of the book -->
-        <iframe width="560" height="315" src="YOUTUBE_URL_FOR_ANALYSIS" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/_k8G8BQCkWw" frameborder="0" allowfullscreen></iframe>
     </section>
 
     <section class="comments">
