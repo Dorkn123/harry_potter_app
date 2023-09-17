@@ -6,33 +6,33 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/book1')
-def book1():
+@app.route('/philosophers_stone')
+def philosophers_stone():
     return render_template('philosophers_stone.html')
 
-@app.route('/book2')
-def book2():
-    return render_template('book2.html')
+@app.route('/chamber_of_secrets')
+def chamber_of_secrets():
+    return render_template('chamber_of_secrets.html')
 
-@app.route('/book3')
-def book3():
-    return render_template('book3.html')
+@app.route('/prisoner_of_azkaban')
+def prisoner_of_azkaban():
+    return render_template('prisoner_of_azkaban.html')
 
-@app.route('/book4')
-def book4():
-    return render_template('book4.html')
+@app.route('/goblet_of_fire')
+def goblet_of_fire():
+    return render_template('goblet_of_fire.html')
 
-@app.route('/book5')
-def book5():
-    return render_template('book5.html')
+@app.route('/order_of_the_phoenix')
+def order_of_the_phoenix():
+    return render_template('order_of_the_phoenix.html')
 
-@app.route('/book6')
-def book6():
-    return render_template('book6.html')
+@app.route('/half_blood_prince')
+def half_blood_prince():
+    return render_template('half_blood_prince.html')
 
-@app.route('/book7')
-def book7():
-    return render_template('book7.html')
+@app.route('/deathly_hallows')
+def deathly_hallows():
+    return render_template('deathly_hallows.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

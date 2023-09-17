@@ -1,59 +1,94 @@
-/* static/css/sidebar.css */
-.sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 250px;
-    height: 100%;
-    background-color: #333; /* Adjust the background color as needed */
-    color: #fff; /* Adjust the text color as needed */
-    padding: 20px;
-    z-index: 1000; /* Ensure the sidebar is above other content */
-    overflow-y: auto; /* Add a vertical scrollbar if the content exceeds the height */
-}
-
-.sidebar nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.sidebar nav ul li {
-    margin-bottom: 10px;
-}
-
-.sidebar a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.sidebar a:hover {
-    text-decoration: underline;
-}
-
+/* Common styles */
 .center-content {
-    margin: 0 auto; /* This centers the content horizontally */
-    text-align: center; /* This centers the text inside the section */
+    text-align: center;
 }
 
-/* Define the background image for the book1-background class */
-.book1-background {
-    background-image: url('https://e0.pxfuel.com/wallpapers/259/192/desktop-wallpaper-harry-potter-and-the-sorcerer-s-stone-harry-potter-and-the-philosopher-s-stone.jpg');
-    background-repeat: no-repeat; /* Prevent image from repeating */
-    background-size: cover; /* Cover the entire section */
-    background-position: center; /* Center the image horizontally and vertically */
+/* Book buttons */
+.book-buttons {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.book-button {
+    margin: 10px;
+    position: relative;
+}
+
+/* Book covers */
+.book-cover-img {
+    width: 120px;
+    height: 160px;
+    border: 2px solid #181817;
+    border-radius: 1px;
+    margin: 10px;
+    transition: transform 0.2s ease;
+}
+
+.book-button:hover {
+    transform: scale(1.05);
+}
+
+/* Book titles */
+/* Update the CSS for book-title to display horizontally */
+.book-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: yellow;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+    display: none; /* Hide the title by default */
+}
+
+.book-button:hover .book-title {
+    display: block; /* Display the title when hovering over the book-button */
+}
+
+
+/* Book backgrounds */
+.book-background {
+    animation: bookBackgroundAnimation 20s linear infinite;
+}
+
+@keyframes bookBackgroundAnimation {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 0; }
 }
 
 /* Custom font for your website */
 @font-face {
     font-family: 'MagicSchoolTwo';
-    src: url('../../fonts/MagicSchoolTwo.ttf') format('truetype');
+    src: url('../fonts/MagicSchoolTwo.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
+/* Mobile styles */
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+    }
 
-/* Adjust the content area to accommodate the sidebar */
-main {
-    margin-left: 280px; /* Ensure the content area doesn't overlap with the sidebar */
-    padding: 20px; /* Add some spacing around the content */
+    .navbar .navbar-logo {
+        flex: 1;
+    }
+
+    .navbar .navbar-logo a {
+        text-align: center;
+    }
+}
+
+/* Homepage background */
+.homepage-background {
+    background-image: url('../backgrounds/home_page_background.bin');
+    /* Other background properties */
+}
+
+/* Text styles */
+.yellow-text-with-outline {
+    color: rgba(211, 166, 37, 1);
 }

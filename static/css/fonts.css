@@ -1,0 +1,8 @@
+/* fonts.css */
+
+@font-face {
+    font-family: 'MagicSchoolTwo'; /* Choose a name for your custom font */
+    src: url('../fonts/MagicSchoolTwo.ttf') format('truetype'); /* Provide the correct path to the font file */
+    font-weight: normal;
+    font-style: normal;
+}
