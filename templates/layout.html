@@ -9,9 +9,10 @@
 </head>
 <body>
     <header class="center-content yellow-text-with-outline">
-        <h1>Welcome to the Magical World of Harry Potter</h1>
+        <h1 style="font-family: 'MagicSchoolTwo' , sans-serif">Welcome to the Magical World of Harry Potter</h1>
         <p>Dive deep into the enchanting tales of bravery, friendship, and magic!</p>
     </header>
+
     <section class="book-buttons center-content">
         <!-- Book 1 -->
         <div class="book-button book1-background">
@@ -38,46 +39,51 @@
             <a href="{{ url_for('prisoner_of_azkaban') }}">
                 <div class="book-cover">
                     <img src="../static/images/book_covers/prisoner_of_azkaban/book3_cover.jpg" alt="Harry Potter and the Prisoner of Azkaban cover" class="book-cover-img">
-                    <div class="book-title">arry Potter and the Prisoner of Azkaban</div>
+                    <div class="book-title">Harry Potter and the Prisoner of Azkaban</div>
                 </div>
             </a>
         </div>
 
         <!-- Book 4 -->
         <div class="book-button book4-background">
-            <div class="book-cover">
-                <img src="{{ url_for('static', filename='images/book_covers/goblet_of_fire/book4_cover.jpg') }}" alt="Harry Potter and the Goblet of Fire cover" class="book-cover-img">
-                <div class="book-title">Harry Potter and the Goblet of Fire</div>
-            </div>
-            <a href="{{ url_for('goblet_of_fire') }}"></a>
+            <a href="{{ url_for('goblet_of_fire') }}">
+                <div class="book-cover">
+                    <img src="../static/images/book_covers/goblet_of_fire/book4_cover.jpg" alt="Harry Potter and the Goblet of Fire cover" class="book-cover-img">
+                    <div class="book-title">Harry Potter and the Goblet of Fire</div>
+                </div>
+            </a>
         </div>
 
         <!-- Book 5 -->
         <div class="book-button book5-background">
-            <div class="book-cover">
-                <img src="{{ url_for('static', filename='images/book_covers/order_of_the_phoenix/book5_cover.jpg') }}" alt="Harry Potter and the Order of the Phoenix cover" class="book-cover-img">
-                <div class="book-title">Harry Potter and the Order of the Phoenix</div>
-            </div>
-            <a href="{{ url_for('order_of_the_phoenix') }}"></a>
-        </div>
+            <a href="{{ url_for('order_of_the_phoenix') }}">
+                <div class="book-cover">
+                    <img src="../static/images/book_covers/order_of_the_phoenix/book5_cover.jpg" alt="Harry Potter and the Order of the Phoenix cover" class="book-cover-img">
+                    <div class="book-title">Harry Potter and the Order of the Phoenix</div>
+                </div>
+            </a>
+        </div>        
 
         <!-- Book 6 -->
         <div class="book-button book6-background">
-            <div class="book-cover">
-                <img src="{{ url_for('static', filename='images/book_covers/half_blood_prince/book6_cover.jpg') }}" alt="Harry Potter and the Half-Blood Prince cover" class="book-cover-img">
-                <div class="book-title">Harry Potter and the Half-Blood Prince</div>
-            </div>
-            <a href="{{ url_for('half_blood_prince') }}"></a>
-        </div>
+            <a href="{{ url_for('half_blood_prince') }}">
+                <div class="book-cover">
+                    <img src="../static/images/book_covers/half_blood_prince/book6_cover.jpg" alt="Harry Potter and the Half-Blood Prince cover" class="book-cover-img">
+                    <div class="book-title">Harry Potter and the Half-Blood Prince</div>
+                </div>
+            </a>
+        </div>        
 
         <!-- Book 7 -->
         <div class="book-button book7-background">
-            <div class="book-cover">
-                <img src="{{ url_for('static', filename='images/book_covers/deathly_hallows/book7_cover.jpg') }}" alt="Harry Potter and the Deathly Hallows cover" class="book-cover-img">
-                <div class="book-title">Harry Potter and the Deathly Hallows</div>
-            </div>
-            <a href="{{ url_for('deathly_hallows') }}"></a>
-        </div>
+            <a href="{{ url_for('deathly_hallows') }}">
+                <div class="book-cover">
+                    <img src="../static/images/book_covers/deathly_hallows/book7_cover.jpg" alt="Harry Potter and the Deathly Hallows cover" class="book-cover-img">
+                    <div class="book-title">Harry Potter and the Deathly Hallows</div>
+                </div>
+            </a>
+        </div>        
+
     </section>
     <main>
         <!-- This block will be overridden by content from other templates -->

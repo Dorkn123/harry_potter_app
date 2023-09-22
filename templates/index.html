@@ -2,12 +2,21 @@
 {% block content %}
     <section class="homepage-background">
     </section>
-    <section class="about center-content yellow-text-with-outline">
+    <section class="about center-content yellow-text-with-outline ">
         <h2>About the Harry Potter Series</h2>
-        <p>The Harry Potter series, authored by J.K. Rowling, tells the story of a young wizard named Harry Potter and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry. The main story arc concerns Harry's struggle against the dark wizard Lord Voldemort, who aims to become immortal, overthrow the wizarding world, and subjugate all non-magical people.</p>
+        <p>The Harry Potter series by J.K. Rowling follows the adventures of Harry Potter, a young wizard, and his friends at Hogwarts School of Witchcraft and Wizardry. The central plot revolves around Harry's battle against the dark wizard Lord Voldemort, who seeks immortality and control over both the wizarding and non-magical worlds.</p>
     </section>
     <section class="center-content">
-        <!-- Embed a YouTube video related to Harry Potter -->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Asm5LwWeXrs?si=4Mge2zULrqlht3Zm" frameborder="0" allowfullscreen></iframe>
+        <!-- Container for the video -->
+        <div class="video-container center-content">
+            <!-- Embed a YouTube video related to Harry Potter -->
+            <iframe class="center-content"
+                src="https://www.youtube.com/embed/Asm5LwWeXrs?si=4Mge2zULrqlht3Zm"
+                frameborder="0"
+                allowfullscreen
+            ></iframe>
+        </div>
     </section>
+    
+    
 {% endblock %}

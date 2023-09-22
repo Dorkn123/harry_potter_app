@@ -48,7 +48,6 @@
     display: block; /* Display the title when hovering over the book-button */
 }
 
-
 /* Book backgrounds */
 .book-background {
     animation: bookBackgroundAnimation 20s linear infinite;
@@ -83,12 +82,61 @@
 }
 
 /* Homepage background */
-.homepage-background {
-    background-image: url('../backgrounds/home_page_background.bin');
-    /* Other background properties */
+body {
+    background-image: url('../backgrounds/home_page_background_2.gif'); /* Update with the correct path to your background image */
+    background-size: 100% 100%; /* Make the background image cover the entire element without stretching */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* This makes the background fixed while scrolling */
+    background-position: center; /* Center the background image */
 }
 
 /* Text styles */
 .yellow-text-with-outline {
     color: rgba(211, 166, 37, 1);
 }
+
+/* Increase font size and style for the about section */
+.about h2 {
+    font-size: 32px; /* Adjust the font size as needed */
+    font-weight: bold; /* Make the text bold */
+    color: rgba(211, 166, 37, 1);
+}
+
+.about p {
+    font-size: 26px; /* Adjust the font size as needed */
+    line-height: 1.5; /* Increase line height for better readability */
+    color: rgba(211, 166, 37, 1);
+}
+
+
+
+
+/* Stretch the header title (h1) and the paragraph (p) horizontally */
+.yellow-text-with-outline h1,
+.yellow-text-with-outline h1 + p {
+    font-size: 48px;
+    font-family: 'MagicSchoolTwo', sans-serif;
+    width: 100%; /* Adjust the width as needed */
+    letter-spacing: 5px; /* Adjust the letter-spacing value as needed */
+    line-height: 1; /* Adjust the line-height value as needed */
+}
+
+/* CSS for the video container */
+/* CSS for the video container */
+.video-container {
+    width: 600px;
+    height: 240px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto; /* Center-align the container horizontally */
+}
+
+/* CSS for the embedded video */
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
