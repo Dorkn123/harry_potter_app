@@ -140,3 +140,77 @@ body {
     left: 0;
 }
 
+/* CSS for Book Videos */
+.book-videos {
+    display: flex; /* Use flexbox to arrange videos side by side */
+    justify-content: space-between; /* Create space between the videos */
+    align-items: center; /* Vertically center the videos */
+    margin-top: 20px; /* Adjust the top margin as needed */
+}
+
+/* Style for individual video containers (optional) */
+.book-trailer,
+.book-analysis {
+    width: 48%; /* Set the width for each video container */
+}
+
+/* CSS for the video container */
+.video-container {
+    width: 280px; /* Set the width for each video container */
+    height: 157px; /* Set the height for each video container */
+    margin: 10px; /* Adjust margin to create space between containers */
+    float: left; /* Float the containers to the left to create side-by-side layout */
+}
+
+/* Clear the float after every two video containers to start a new row */
+.video-container:nth-child(2n+1) {
+    clear: left;
+}
+
+/* CSS for the embedded video */
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* CSS for the home button */
+.home-button {
+    position: absolute;
+    top: 10px; /* Adjust the top position as needed */
+    left: 10px; /* Adjust the left position as needed */
+    z-index: 100; /* Ensure it's on top of other elements if necessary */
+    display: inline-block;
+    background-color: 1; /* Adjust the background color as needed */
+    padding: 10px 20px; /* Adjust the padding as needed */
+    border: 2px solid #c0c0c0; /* Add a border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline for the link */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Style for the home button's logo */
+.home-logo {
+    width: 1; /* Adjust the width as needed */
+    height: 1; /* Adjust the height as needed */
+    vertical-align: middle;
+    margin-right: 10px; /* Add some space between logo and text */
+}
+
+/* Style for the home button's message */
+.home-message {
+    vertical-align: middle;
+    display: none; /* Initially hide the message */
+}
+
+/* Show the message on hover */
+.home-button:hover .home-message {
+    display: inline-block;
+}   
+
+/* Change background color on hover */
+.home-button:hover {
+    background-color: #d9ff003f; /* Adjust the hover background color as needed */
+}

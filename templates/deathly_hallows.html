@@ -1,27 +1,39 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<section id="book7" class="book-detail">
+<section id="deathly_hallows" class="book-detail center-content book1-background yellow-text-with-outline">
     <header>
         <h1>Harry Potter and the Deathly Hallows</h1>
     </header>
-    
 
+    <!-- First row for trailers -->
+    <div class="video-grid">
+        <div class="video-container">
+            <h2>Movie Trailer - Part 1</h2>
+            <iframe width="280" height="157" src="https://www.youtube.com/embed/Su1LOpjvdZ4" frameborder="0" allowfullscreen></iframe>
+        </div>
 
-    <section class="book-trailer">
-        <h2>Movie Trailer</h2>
-        <!-- Embed a YouTube video for the book's movie trailer -->
-        <iframe width="560" height="315" src="YOUTUBE_URL_FOR_BOOK7_TRAILER" frameborder="0" allowfullscreen></iframe>
-    </section>
-    
-    <section class="book-analysis">
-        <h2>Deep Analysis</h2>
-        <!-- Embed a YouTube video for a deep analysis of the book -->
-        <iframe width="560" height="315" src="YOUTUBE_URL_FOR_BOOK7_ANALYSIS" frameborder="0" allowfullscreen></iframe>
-    </section>
+        <div class="video-container">
+            <h2>Movie Trailer - Part 2</h2>
+            <iframe width="280" height="157" src="https://www.youtube.com/embed/mObK5XD8udk" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Second row for analyses -->
+    <div class="video-grid">
+        <div class="video-container">
+            <h2>Analysis - Part 1</h2>
+            <iframe width="280" height="157" src="https://www.youtube.com/embed/1iRcW4vxr7E" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="video-container">
+            <h2>Analysis - Part 2</h2>
+            <iframe width="280" height="157" src="https://www.youtube.com/embed/Kx4gxxESzDY" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
 
     <section class="comments">
-        <!-- Placeholder for the comments system -->
+        <!-- A placeholder for the comments system. Could be integrated with Disqus or a custom comments system -->
         <h2>Comments</h2>
         <p>Place for visitors to leave comments.</p>
     </section>
